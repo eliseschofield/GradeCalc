@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Elise's Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Elise's Grade Calculator!!!</h1>
+
+
+
+<table>
+    <tr>
+        <td>Homework Points:<input id="homework" value="80,90"></td>
+        <td>Homework Weight:<input id="homeworkWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td>Classwork Points:<input id="classwork" value="80,90"></td>
+        <td>Classwork Weight:<input id="classworkWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td>Assessment Points:<input id="assessment" value="80,90"></td>
+        <td>Assessment Weight:<input id="assessmentWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td>Participation Points:<input id="participation" value="80,90"></td>
+        <td>Participation Weight:<input id="participationWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td><button onclick="calculateCurrentGrade()">Current Grade</button></td>
+    </tr>
+    <tr>
+        <td id="currentGrade"></td>
+    </tr>
+
+    <tr>
+        <td>Final Grade Desired:<input id="final"></td>
+    </tr>
+    <tr>
+        <td><button onclick="calculateGradeNeeded()">Calculate grade needed!</button> </td>
+    </tr>
+</table>
+
+<p>Weights must add up to 100!</p>
+ <div id="finalGrade"></div>
+
+</body>
+</html>
